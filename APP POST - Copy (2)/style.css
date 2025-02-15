@@ -1,0 +1,112 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Arial', sans-serif;
+}
+
+body {
+   background-color: #f4f4f9;
+   color: #333;
+}
+
+.container {
+   max-width: 1000px;
+   margin: 40px auto;
+   display: flex;
+   flex-direction: column;
+   gap: 24px;
+   padding: 16px;
+}
+
+#postArea {
+   padding: 20px;
+   width: 100%;
+   min-height: 200px;
+   border: 2px solid #333;
+   border-radius: 8px;
+   background-color: #fff;
+   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+   overflow-y: auto;
+}
+
+#clickPost {
+   width: 250px;
+   padding: 14px;
+   font-size: 18px;
+   font-weight: bold;
+   background-color: #007BFF;
+   color: white;
+   border: none;
+   border-radius: 8px;
+   cursor: pointer;
+   transition: background-color 0.3s ease;
+}
+
+#clickPost:hover {
+   background-color: #0056b3;
+}
+
+.postAreaHidden {
+   display: none;
+   flex-direction: column;
+   gap: 12px;
+}
+
+#tagline, #description {
+   padding: 12px;
+   font-size: 18px;
+   border: 2px solid #ccc;
+   border-radius: 8px;
+   transition: border-color 0.3s ease;
+}
+
+#tagline:focus, #description:focus {
+   border-color: #007BFF;
+   outline: none;
+}
+
+#postBtn {
+   padding: 14px;
+   font-size: 18px;
+   font-weight: bold;
+   background-color: #28a745;
+   color: white;
+   border: none;
+   border-radius: 8px;
+   cursor: pointer;
+   transition: background-color 0.3s ease;
+}
+
+#postBtn:hover {
+   background-color: #218838;
+}
+
+.post {
+   display: flex;
+   flex-direction: column;
+   gap: 8px;
+   padding: 16px;
+   margin-top: 20px;
+   background-color: #fff;
+   border: 2px solid #ccc;
+   border-radius: 8px;
+   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.post h2 {
+   font-size: 22px;
+   color: #007BFF;
+   margin-bottom: 8px;
+}
+
+.post h4 {
+   font-size: 16px;
+   color: #555;
+}
+
+.post p {
+   font-size: 14px;
+   color: #888;
+   font-style: italic;
+}

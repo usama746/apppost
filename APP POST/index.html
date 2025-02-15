@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="style.css" />
+      <title>Document</title>
+   </head>
+
+   <body>
+      <div class="main">
+         <div id="postArea">
+            <h1>Your Posts</h1>
+         </div>
+
+         <button onclick="post()" id="clickPost">Click Here to Post</button>
+
+         <div id="mainPost" class="before">
+            <input type="text" id="tagline" placeholder="Enter Your Tagline" />
+
+            <textarea
+               name="description"
+               id="description"
+               placeholder="Enter Description"
+               cols="60"
+               rows="8"
+            ></textarea>
+
+            <button onclick="postNow()" id="postBtn">Post</button>
+         </div>
+      </div>
+
+      <script src="app.js"></script>
+   </body>
+</html>
